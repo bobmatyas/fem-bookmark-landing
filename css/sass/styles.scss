@@ -2,6 +2,7 @@
 @import 'colors';
 
 $default-font-size: 1.8rem;
+$section-spacing-value: 150px;
 
 
 * {
@@ -14,6 +15,110 @@ html {
 
 body {
   font-family: 'Rubik', sans-serif;
+  color: $grayish-blue;
+  font-size: $default-font-size;
+  line-height: 30px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 40px 25px 0 25px;
+}
+
+.hero__heading {
+  color: $very-dark-blue;
+  font-size: 2.7rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.button {
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 3px 5px rgba(105, 105, 109, 0.15);
+  color: #565865;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 17px;
+}
+
+.button:hover {
+  background-color: $soft-blue;
+  color: #fff;
+}
+
+.button:active {
+  transform: translateY(2px);
+}
+
+.features {
+  margin-top: $section-spacing-value;
+}
+
+.features__heading {
+  color: $very-dark-blue;
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.extension {
+  margin-top:  $section-spacing-value
+}
+
+.extension__heading {
+  color: $very-dark-blue;
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.extension__card {
+  border: 1px solid #f7f6fb;
+  border-radius: 15px;
+  margin: 0 auto;
+  padding: 50px 0 20px 0;
+  width: 280px;
+}
+
+.faq {
+  margin-top:  $section-spacing-value
+}
+
+.faq__heading {
+  color: $very-dark-blue;
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-align: center;  
+}
+
+.signup {
+  background-color: $soft-blue;
+  margin: 0;
+}
+
+.footer {
+  background-color: $very-dark-blue;
+  margin: 0;
 }
 
 .attribution { font-size: 11px; text-align: center; }
