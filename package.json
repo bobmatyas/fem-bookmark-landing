@@ -1,0 +1,12 @@
+{
+  "name": "fem-bookmark-landing",
+  "version": "1.0.0",
+  "description": "Bookmark landing page solution for Frontendmentor.io",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass ./css/sass/styles.scss ./css/styles.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
