@@ -1,0 +1,17 @@
+@import 'normalize';
+
+$default-font-size: 1.8rem;
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
