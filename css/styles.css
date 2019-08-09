@@ -347,9 +347,10 @@ html {
 
 body {
   font-family: "Rubik", sans-serif;
-  color: #9194a1;
   font-size: 1.8rem;
+  color: #9194a1;
   line-height: 30px;
+  margin: 0;
   text-align: center;
 }
 
@@ -402,6 +403,11 @@ section {
   transform: translateY(2px);
 }
 
+.button--blue {
+  background-color: #5368df;
+  color: #fff;
+}
+
 .features {
   margin-top: 150px;
 }
@@ -425,11 +431,28 @@ section {
 }
 
 .extension__card {
-  border: 1px solid #f7f6fb;
   border-radius: 15px;
-  margin: 0 auto;
+  box-shadow: 1px 3px 10px rgba(105, 105, 109, 0.15);
+  margin: 20px auto;
   padding: 50px 0 20px 0;
   width: 280px;
+}
+
+.extension__card__heading {
+  color: #252b46;
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin: 10px 0 5px 0;
+  text-align: center;
+}
+
+.extension__card__version {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.extension__card__separator {
+  margin: 20px 0 20px 0;
 }
 
 .faq {
@@ -443,9 +466,74 @@ section {
   text-align: center;
 }
 
+details summary {
+  color: #252b46;
+  padding: 25px 0;
+  text-align: right;
+  border-bottom: 1px solid #eee;
+  display: block;
+}
+
+.faq__question {
+  display: inline-block;
+  margin: 5px 0;
+  text-align: left;
+  width: 90%;
+}
+
+/* Hide the default marker. */
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Add the custom marker in the default state. */
+details summary:after {
+  display: inline-block;
+  content: url("../images/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  text-align: right;
+}
+
+details[open] summary:after {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  content: "";
+  background-image: url("../images/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  transform: scaleY(-1);
+}
+
+details[open] summary {
+  border: none;
+}
+
+.button--faq {
+  margin-bottom: 35px;
+  margin-top: 35px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 .signup {
   background-color: #5368df;
+  color: #fff;
+}
+
+.signup__tagline {
+  font-size: 1.4rem;
+  letter-spacing: 3px;
+  padding: 70px 0 0 0;
+  text-transform: uppercase;
+}
+
+.signup__heading {
+  font-size: 2.2rem;
+  font-weight: 500;
   margin: 0;
+  text-align: center;
 }
 
 .footer {

@@ -100,26 +100,28 @@
       <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve 
         got a favourite you’d like us to prioritize.</p>
 
-      <div class="extension__card">
+      <div class="extension__card chrome">
         <img src="images/logo-chrome.svg" alt="chrome" />
-        <h3>Add to Chrome</h3>
-        <p>Minimum version 62</p>
-        <img src="images/bg-dots.svg" />
-        <button>Add & Install Extension</button>
+        <h3 class="extension__card__heading">Add to Chrome</h3>
+        <p class="extension__card__version">Minimum version 62</p>
+        <img src="images/bg-dots.svg" alt="dotted border" class="extension__card__separator" />
+        <button class="button button--blue">Add & Install Extension</button>
       </div>
 
-      <div>
+      <div class="extension__card firefox">
         <img src="images/logo-firefox.svg" alt="firefox" />
-        <h3>Add to Firefox</h3>
-        <p>Minimum version 55</p>
-        <button>Add & Install Extension</button>
+        <h3 class="extension__card__heading">Add to Firefox</h3>
+        <p class="extension__card__version">Minimum version 55</p>
+        <img src="images/bg-dots.svg" alt="dotted border" class="extension__card__separator" />
+        <button class="button button--blue">Add & Install Extension</button>
       </div>
 
-      <div>
+      <div class="extension__card opera">
         <img src="images/logo-opera.svg" alt="opera" />
-        <h3>Add to Opera</h3>
-        <p>Minimum version 46</p>
-        <button>Add & Install Extension</button>
+        <h3 class="extension__card__heading">Add to Opera</h3>
+        <p class="extension__card__version">Minimum version 46</p>
+        <img src="images/bg-dots.svg" alt="dotted border" class="extension__card__separator" />
+        <button class="button button--blue">Add & Install Extension</button>
       </div>
 
     </section>
@@ -128,48 +130,46 @@
       
       <h3 class="faq__heading">Frequently Asked Questions</h3>
 
-      <p>Here are some of our FAQs. If you have any other questions you’d like 
-        answered please feel free to email us.</p>
+      <p>Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
 
-        <!-- Question 1 -->
-  What is Bookmark?
+      <details>
+        <summary><span class="faq__question">What is Bookmark?</span> </summary>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+            justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+      </details>
+  
 
-  <!-- Answer 1 -->
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+      <details>
+          <summary><span class="faq__question">How can I request a new browser?</span></summary>
+          <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+              Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+              Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+      </details>
 
-  <!-- Question 2 -->
-  How can I request a new browser?
+      <details>
+          <summary><span class="faq__question">Is there a mobile app?</span></summary>
+          <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+              urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+              sollicitudin ex et ultricies bibendum.</p>
+      </details>
 
-  <!-- Answer 2 -->
-  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
-  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+      <details>
+          <summary><span class="faq__question">What about other Chromium browsers?</span></summary>
+          <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+              vitae neque eget nisl gravida pellentesque non ut velit.</p>
+      </details>
 
-  <!-- Question 3 -->
-  Is there a mobile app?
 
-  <!-- Answer 3 -->
-  Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
-  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
-  sollicitudin ex et ultricies bibendum.
-
-  <!-- Question 4 -->
-  What about other Chromium browsers?
-
-  <!-- Answer 4 -->
-  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
-  vitae neque eget nisl gravida pellentesque non ut velit.
-
-    <button>More Info</button>  
+    <button class="button button--blue button--faq">More Info</button>  
 
     </section>
 
     <section class="signup">
 
-      <p>35,000+ already joined</p>
-      <h2>Stay up-to-date with what we’re doing</h2>
+      <p class="signup__tagline">35,000+ already joined</p>
+      
+      <h2 class="signup__heading">Stay up-to-date with what we’re doing</h2>
 
       <form>
         <input type="text" placeholder="Enter your email address" />
