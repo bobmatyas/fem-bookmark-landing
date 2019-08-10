@@ -212,6 +212,20 @@ details[open] summary {
   padding: 15px;
 }
 
+.signup__form__input__holder {
+  margin: 10px 0;
+  padding: 2px 2px 5px 2px;
+}
+
+.signup__form__input__holder--red {
+  background-color: $soft-red;
+}
+
+.signup__form__input__holder__alert {
+  color: #fff;
+}
+
+
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #ceced0;
 }
