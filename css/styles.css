@@ -520,6 +520,7 @@ details[open] summary {
 .signup {
   background-color: #5368df;
   color: #fff;
+  padding-bottom: 50px;
 }
 
 .signup__tagline {
@@ -536,14 +537,84 @@ details[open] summary {
   text-align: center;
 }
 
+.signup__form__input {
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 15px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #ceced0;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ceced0;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #ceced0;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #ceced0;
+}
+
+.signup__form__button {
+  background-color: #fa5757;
+  color: #fff;
+  width: 100%;
+}
+
+.signup__form__button:hover {
+  background-color: #fa5757;
+  color: #fff;
+}
+
 .footer {
   background-color: #252b46;
+  color: #fffeff;
   margin: 0;
+  padding: 40px 0 0 0;
+}
+
+.footer__nav {
+  list-style-type: none;
+  margin: 25px 0;
+  padding: 0;
+}
+
+.footer__nav__item {
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  margin: 15px 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.footer__social {
+  list-style-type: none;
+  margin: 50px 0 0 0;
+  padding: 0;
+}
+
+.footer__social__item {
+  display: inline-block;
+}
+
+.footer__social li:last-of-type {
+  margin-left: 35px;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin: 0;
+  padding: 50px 0;
 }
 
 .attribution a {
