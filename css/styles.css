@@ -419,6 +419,35 @@ section {
   text-align: center;
 }
 
+.features__menu {
+  border-bottom: 1px solid #dde0e9;
+  border-top: 1px solid #dde0e9;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.features__menu__item {
+  border-bottom: 1px solid #dde0e9;
+  padding: 10px 0 0 0;
+}
+
+.features__menu__item__highlight {
+  height: 4px;
+  margin: 0 auto;
+  text-align: center;
+  width: 40%;
+}
+
+.features__menu__item__highlight--red {
+  background-color: #fa5757;
+}
+
+.features__menu__item:hover {
+  color: #252b46;
+  cursor: pointer;
+}
+
 .extension {
   margin-top: 150px;
 }
@@ -500,7 +529,7 @@ details[open] summary:after {
   width: 18px;
   height: 18px;
   content: "";
-  background-image: url("../images/icon-arrow.svg");
+  background-image: url("../images/icon-arrow-red.svg");
   background-repeat: no-repeat;
   background-position: center right;
   transform: scaleY(-1);
@@ -542,6 +571,14 @@ details[open] summary {
   border-radius: 5px;
   font-size: 16px;
   padding: 15px;
+  width: 100%;
+}
+
+.signup__form__input--alert {
+  background-image: url("../images/exclamation-circle-solid.svg");
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: 5%;
 }
 
 .signup__form__input__holder {
