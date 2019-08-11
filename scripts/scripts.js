@@ -1,4 +1,23 @@
 
+const mobileMenu = document.getElementById('mobile_menu');
+
+
+const showMobileMenu = () => {
+  mobileMenu.classList.remove('mobile__nav--hidden');
+}
+
+const hideMobileMenu = () => {
+  mobileMenu.classList.add('mobile__nav--hidden');
+}
+
+const mobileOpen = document.getElementById('menuOpen');
+
+mobileOpen.addEventListener('click', showMobileMenu);
+
+const mobileHide = document.getElementById('menuClose');
+
+mobileHide.addEventListener('click', hideMobileMenu);
+
 const addRedHover = (item) => {
   const addRed = document.getElementById(item);
   if (addRed.classList.contains('features__menu__item__highlight--red')) {
@@ -9,7 +28,6 @@ const addRedHover = (item) => {
 }
 
 const changeFeatureTab = (item) => {
-  console.log(item);
   const featureImage = document.getElementById('features_tab_image');
   const featureHeading = document.getElementById('features_tab_heading');
   const featureDescription = document.getElementById('features_tab_description');
@@ -30,7 +48,6 @@ const changeFeatureTab = (item) => {
       image = 'images/illustration-features-tab-1.svg';
       heading = 'Bookmark in one click';
       description = 'Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.';
-
   }
 
   featureImage.setAttribute('src', image);
@@ -73,8 +90,6 @@ const checkEmail = (event) => {
     inputHolderContainer.removeChild(child);
   } else if (!emailAddress.match(mailFormat)) {
 
-    /* add check if it already exists! */
-
     inputHolderContainer.classList.add('signup__form__input__holder--red');
 
     if (!document.getElementById('signup_alert')) {
@@ -89,7 +104,6 @@ const checkEmail = (event) => {
   }
 }
 
-let emailClick = document.getElementById('signup_email');
+const emailClick = document.getElementById('signup_email');
 
 emailClick.addEventListener("click", checkEmail);
-

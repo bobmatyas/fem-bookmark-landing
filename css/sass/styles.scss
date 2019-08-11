@@ -37,10 +37,62 @@ section {
 }
 
 .header {
+  align-items: center;
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 40px 25px 0 25px;
+}
+
+.main__nav {
+  display: none;
+}
+
+.mobile__nav {
+  background-color: rgba(36, 41, 70, 0.95);
+  color: #fff;
+  height: 100%;  
+  left: 0;
+  margin: 0;
+  padding: 64px 25px 0 25px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.mobile__nav--hidden {
+  display: none;
+}
+
+.mobile__nav__header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile__nav__menu {
+  border-top: 1px solid #4c526c;
+  list-style-type: none;
+  margin: 25px auto;
+  padding: 0;
+}
+
+.mobile__nav__menu__item {
+  border-bottom: 1px solid #4c526c;
+  color: #fff;
+  letter-spacing: 2px;
+  padding: 25px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.mobile__nav__menu li:last-of-type {
+  border: 3px solid #fff;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-top: 25px;
+  padding: 15px 0;
 }
 
 .hero__heading {
