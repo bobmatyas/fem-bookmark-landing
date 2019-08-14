@@ -354,10 +354,6 @@ body {
   text-align: center;
 }
 
-img {
-  max-width: 100%;
-}
-
 main {
   margin: 0;
   padding: 0;
@@ -425,6 +421,10 @@ section {
   font-weight: 500;
   margin-top: 25px;
   padding: 15px 0;
+}
+
+.hero {
+  margin-top: 80px;
 }
 
 .hero__heading {
@@ -500,6 +500,25 @@ section {
   cursor: pointer;
 }
 
+.blue__box {
+  background-color: #5368df;
+  border-bottom-right-radius: 55%;
+  height: 185px;
+  margin: 0 0;
+  position: relative;
+  width: 75%;
+  z-index: 1;
+}
+
+.blue__box__image {
+  left: 0;
+  margin-top: -43px;
+  position: absolute;
+  top: 0;
+  max-width: 120%;
+  z-index: 2;
+}
+
 .extension {
   margin-top: 150px;
 }
@@ -562,12 +581,10 @@ details summary {
   width: 90%;
 }
 
-/* Hide the default marker. */
 details summary::-webkit-details-marker {
   display: none;
 }
 
-/* Add the custom marker in the default state. */
 details summary:after {
   display: inline-block;
   content: url("../images/icon-arrow.svg");
