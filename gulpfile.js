@@ -3,11 +3,13 @@
 const gulp = require("gulp");
 
 const concat = require("gulp-concat");
+const gulp_remove_logging = require("gulp-remove-logging");
 const uglify = require("gulp-uglify-es").default;
 const sass = require('gulp-sass');
 
 
-const minify = _ => gulp.src("./scripts/scripts.js").pipe(uglify()).pipe(gulp.dest("./scripts/min/scripts.min.js"));
+
+const minify = _ => gulp.src("./scripts/scripts.js").pipe(gulp_remove_logging()).pipe(uglify()).pipe(gulp.dest("./scripts/min"));
 
 gulp.task('sass', function(done) {
   gulp.src('./css/sass/*.scss')

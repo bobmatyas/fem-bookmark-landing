@@ -140,7 +140,6 @@ section {
 
 .button--get--ff {
   border: 1px solid #f7f7f7;
-  margin-left: 25px;
 }
 
 .features {
@@ -218,8 +217,9 @@ section {
 }
 
 .blue__box__image {
-  min-width: 320px;
-  width: 90%;
+  max-width: 350px;
+  min-width: 290px;
+  width: 100%;
 }
 
 .blue__box__image--right {
@@ -797,6 +797,10 @@ details summary {
 
   .button--faq {
     display: none;
+  }
+
+  .button--get-ff {
+    margin-left: 25px;
   }
 
 }

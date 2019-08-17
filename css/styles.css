@@ -720,8 +720,7 @@ section {
   color: #fff; }
 
 .button--get--ff {
-  border: 1px solid #f7f7f7;
-  margin-left: 25px; }
+  border: 1px solid #f7f7f7; }
 
 .features {
   margin-top: 100px; }
@@ -783,8 +782,9 @@ section {
   margin: 0 125px 0 0; }
 
 .blue__box__image {
-  min-width: 320px;
-  width: 90%; }
+  max-width: 350px;
+  min-width: 290px;
+  width: 100%; }
 
 .blue__box__image--right {
   margin-top: -45px;
@@ -1214,4 +1214,6 @@ details summary {
     margin: 0;
     padding: 0; }
   .button--faq {
-    display: none; } }
+    display: none; }
+  .button--get-ff {
+    margin-left: 25px; } }

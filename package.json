@@ -14,5 +14,8 @@
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.0.2",
     "gulp-uglify-es": "^1.0.4"
+  },
+  "dependencies": {
+    "gulp-remove-logging": "^1.2.0"
   }
 }
