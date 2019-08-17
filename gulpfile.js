@@ -7,7 +7,7 @@ const uglify = require("gulp-uglify-es").default;
 const sass = require('gulp-sass');
 
 
-const minify = _ => gulp.src("scripts/scripts.js").pipe(uglify()).pipe(gulp.dest("scripts/min"));
+const minify = _ => gulp.src("./scripts/scripts.js").pipe(uglify()).pipe(gulp.dest("./scripts/min/scripts.min.js"));
 
 gulp.task('sass', function(done) {
   gulp.src('./css/sass/*.scss')

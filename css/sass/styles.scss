@@ -2,7 +2,9 @@
 @import 'colors';
 
 $default-font-size: 1.8rem;
-$section-spacing-value: 150px;
+$section-spacing-value: 100px;
+
+$desktop-heading-size: 3.4rem;
 
 
 * {
@@ -103,6 +105,12 @@ section {
   font-weight: 500;
 }
 
+.hero__text__holder {
+  margin-top: 50px;
+  padding: 0 5%;
+}
+
+
 .button {
   background-color: #f7f7f7;
   border: none;
@@ -126,11 +134,25 @@ section {
 
 .button--blue {
   background-color: $soft-blue;
+  border: 1px solid $soft-blue;
   color: #fff;
+}
+
+.button--get--ff {
+  border: 1px solid #f7f7f7;
+  margin-left: 25px;
 }
 
 .features {
   margin-top: $section-spacing-value;
+}
+
+.features__text {
+  padding: 0 5%;
+}
+
+.features__description {
+  margin-bottom: 50px;
 }
 
 .features__heading {
@@ -141,10 +163,9 @@ section {
 }
 
 .features__menu {
-  border-bottom: 1px solid #dde0e9;
   border-top: 1px solid #dde0e9;
   list-style-type: none;
-  margin: 0;
+  margin: 25px 0 100px 0;
   padding: 0;
 }
 
@@ -162,38 +183,62 @@ section {
 
 .features__menu__item__highlight--red {
   background-color: $soft-red;
+  color: $very-dark-blue;
+}
+
+.features__menu__item--blue {
+  color: $very-dark-blue;
 }
 
 .features__menu__item:hover {
-  color: $very-dark-blue;
+  color: $soft-red;
   cursor: pointer;
+}
+
+.features__holder__text {
+  padding: 0 5%;
+}
+
+.button--features {
+  display: none;
 }
 
 .blue__box {
   background-color: #5368df;
+}
+
+.blue__box--right {
   border-bottom-left-radius: 90px;
-  /* border-left: 25px solid #fff; */
-  /* min-height: 185px; */
-  padding: 0 0 0 25px;
-  margin: 35px 0 0 25px;
-  /* max-width: 500px; */
-  position: relative;
-  z-index: 1;
+  margin: 0 0 0 125px;
+}
+
+.blue__box--left {
+  border-bottom-right-radius: 90px;
+  margin: 0 125px 0 0;
 }
 
 .blue__box__image {
-  left: 0;
-  margin-top: -43px;
-  /* max-width: 600px; */
-  /* min-width: 320px; */
-  position: absolute;
-  top: 0;
-  width: 500px;
-  z-index: 2;
+  min-width: 320px;
+  width: 90%;
+}
+
+.blue__box__image--right {
+  margin-top: -45px;
+  margin-left: -120px;
+}
+
+.blue__box__image--left {
+  margin-top: -45px;
+  margin-right: -140px;
+}
+
+.hero__image__holder {
+  padding-left: 5%;
 }
 
 .extension {
-  margin-top:  $section-spacing-value
+  margin-top:  $section-spacing-value;
+  padding: 5%;
 }
 
 .extension__heading {
@@ -230,6 +275,7 @@ section {
 
 .faq {
   margin-top:  $section-spacing-value;
+  padding: 0 5%;
 }
 
 .faq__heading {
@@ -281,6 +327,32 @@ details[open] summary {
   border: none;
 }
 
+.faq__answer {
+  text-align: left;
+}
+
+.faq__question {
+  left: 0;
+  position: absolute;
+  text-align: left;
+  top: 0;
+  width: 90%;
+}
+
+.faq__question:hover {
+  color: $soft-red;
+  cursor: pointer;
+}
+
+details {
+  margin: 25px 0 0 0;
+}
+
+details summary {
+  padding: 0 0 25px 0;
+  position: relative;
+}
+
 .button--faq {
   margin-bottom: 35px;
   margin-top: 35px;
@@ -291,6 +363,7 @@ details[open] summary {
 .signup {
   background-color: $soft-blue;
   color: #fff;
+  padding: 0 5%;
   padding-bottom: 50px;
 }
 
@@ -330,10 +403,16 @@ details[open] summary {
 
 .signup__form__input__holder--red {
   background-color: $soft-red;
+  border-radius: 5px;
 }
 
 .signup__form__input__holder__alert {
   color: #fff;
+  font-size: 1.4rem;
+  font-style: italic;
+  margin: 0;
+  padding: 5px 0 0 10px;
+  text-align: left;
 }
 
 
@@ -400,7 +479,74 @@ details[open] summary {
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
+.footer__social__item a:link, .footer__social__item a:visited {
+  color: #fff;
+}
+
+.footer__social__item a:hover, .footer__social__item a:active {
+  color: $soft-red;
+}
+
+.footer__nav__item:hover {
+  color: $soft-red;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 600px)  {
+  
+  .blue__box__image--right {
+    margin-top: -45px;
+    margin-left: -225px;
+    width: 100%;
+    min-width: 550px;
+    max-width: 600px;
+  }
+
+  .blue__box--right {
+    margin: 0 0 0 200px;
+  }
+
+  .blue__box__image--left {
+    margin-top: -45px;
+    margin-right: -225px;
+    width: 100%;
+    min-width: 425px;
+    max-width: 525px;
+  }
+
+  .blue__box--left {
+    margin: 0 200px 0 0;
+  }
+
+  .button--blue:hover {
+    background-color: #fff;
+    border: 1px solid $soft-blue;
+    color: $soft-blue;
+  }
+
+  .button--get--ff:hover {
+    background-color: #fff;
+    border: 1px solid $very-dark-blue;
+    color: $very-dark-blue;
+  }
+
+  .button--get--ff:active {
+    border: 1px solid $very-dark-blue;
+    color: $very-dark-blue
+  }
+  
+  .button--get--ff:focus {
+    border: 1px solid $very-dark-blue;
+    color: $very-dark-blue    
+  }
+
+}
+
 @media only screen and (min-width: 1000px)  {
+
+  .features__heading, .hero__heading, .signup__heading, .faq__heading, .extension__heading {
+    font-size: $desktop-heading-size;
+  }
 
   .hero {
     flex-direction: row-reverse;
@@ -419,14 +565,238 @@ details[open] summary {
   }
 
   .blue__box__image--right {
-    margin-left: -100px;
+    margin-left: -200px;
     margin-top: -90px;
-    max-width: 500px;
+    width: 500px;
+  }
+
+  .blue__box__image--left {
+    margin-right: -200px;
+    margin-top: -120px;
+    width: 425px;
   }
 
   .blue__box--right {
     height: 300px;   
     margin-left: 100px;
+  }
+
+  .blue__box--left {
+    height: 300px;   
+    margin-right: 150px;
+  }
+
+  .features__holder {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+
+  .features__heading__info__box {
+    margin: 0;
+    text-align: left;
+  }
+
+  .features__holder__photo {
+    padding-right: 5%;
+    width: 50%;
+  }
+
+  .features__holder__text {
+    padding-left: 5%;
+    text-align: left;
+    width: 50%;
+  }
+
+  .features__menu {
+    border-bottom: 1px solid #dde0e9;
+    border-top: none;
+  }
+
+  .features__menu__item {
+    border-bottom: none;
+    display: inline-block;
+    padding: 0 5px 0 5px;
+  }
+
+  .features__menu__item__highlight {
+    width: 110%;
+  }
+
+  .extension__holder {
+    align-items: flex-start; 
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .extension__card {
+    margin: 0 12px 0 12px;
+  }
+
+  .extension__card--firefox {
+    margin-top: 30px;
+  }
+
+  .extension__card--opera {
+    margin-top: 60px;
+  }
+
+  .features__text {
+    margin: 0 auto 200px auto;
+    max-width: 740px;
+  }
+
+  .extension__text {
+    margin: 0 auto;
+    max-width: 640px;
+  }
+
+  .faq {
+    max-width: 640px;
+    margin: 150px auto;
+  }
+
+
+
+  .signup__holder {
+    margin: 0 auto;
+    max-width: 640px;
+  }
+
+  .signup__heading {
+    padding: 25px 35px;
+  }
+
+  .features__menu {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 80px auto 50px auto;
+  }
+
+  .features__menu__item:hover {
+    color: $soft-red;
+  }
+
+  .features__menu__item--pad {
+    padding-left: 10px;
+    margin: 0;
+  }
+
+  .header {
+    margin-bottom: 100px;
+  }
+
+  .mobile__nav__icon {
+    display: none;
+  }
+
+  .main__nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main__nav__item {
+    color: $very-dark-blue;
+    font-size: 1.4rem;
+    margin: 0 10px;
+    padding: 5px;
+    text-transform: uppercase;
+  }
+
+  .main__nav li:last-of-type {
+    background-color: $soft-red;
+    border: 1px solid $soft-red;
+    border-radius: 5px;
+    color: #fff;
+    padding: 2px 25px;
+  }
+
+  .main__nav li:last-of-type:hover {
+    background-color: #fff;
+    border: 1px solid $soft-red;
+    color: $soft-red;
+    padding: 2px 25px;
+  }
+
+  .main__nav__item:hover {
+    color: $soft-red;
+    cursor: pointer;
+  }
+
+  .signup__form {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0 90px;
+  }
+
+  .signup__form__input {
+    width: 100%;
+  }
+
+  .signup__form__input__holder {
+    margin: 0 20px 0 0;
+    width: 100%;
+  }
+
+  .signup__form__button {
+    width: 150px;
+  }
+
+  .signup__form__button:hover {
+    background-color: #fff;
+    border: 1px solid $soft-red;
+    color: $soft-red;
+  }
+
+  .footer__nav__holder {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 5%;
+  }
+
+  .footer__nav__holder__left {
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer__nav__holder__right {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer__social {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer__nav {
+    align-items: flex-start;
+    display: flex;
+    margin: 0;
+    margin-top: -7px;
+    margin-left: 25px;
+    padding: 0;
+  }
+
+  .footer__nav__item {
+    margin: 0;
+    padding: 0;
+  }
+
+  .button--faq {
+    display: none;
   }
 
 }
