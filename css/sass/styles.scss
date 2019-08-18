@@ -310,6 +310,7 @@ details summary:after {
   background-repeat: no-repeat;
   background-position: right center;
   text-align: right;
+  padding-bottom: 20px;
 }
 
 details[open] summary:after {
@@ -803,4 +804,8 @@ details summary {
     margin-left: 25px;
   }
 
+  details summary:after {
+    padding-bottom: 0;
+  }
+  
 }

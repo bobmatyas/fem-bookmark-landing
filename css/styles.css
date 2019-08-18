@@ -859,7 +859,8 @@ details summary:after {
   content: url("../images/icon-arrow.svg");
   background-repeat: no-repeat;
   background-position: right center;
-  text-align: right; }
+  text-align: right;
+  padding-bottom: 20px; }
 
 details[open] summary:after {
   display: inline-block;
@@ -1216,4 +1217,6 @@ details summary {
   .button--faq {
     display: none; }
   .button--get-ff {
-    margin-left: 25px; } }
+    margin-left: 25px; }
+  details summary:after {
+    padding-bottom: 0; } }
