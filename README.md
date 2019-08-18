@@ -4,6 +4,10 @@ My solution to the Frontend Mentor Bookmark Landing Page challenge.
 
 It is a mobile-first solution using HTML/CSS and JavaScript. I used SASS, BEM, and Gulp to aid in the development process. 
 
+Check it out:
+
+[https://bobmatyas.github.io/fem-bookmark-landing](https://bobmatyas.github.io/fem-bookmark-landing)
+
 
 ## Frontend Mentor - Bookmark landing page
 
