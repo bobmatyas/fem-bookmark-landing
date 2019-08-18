@@ -1209,11 +1209,11 @@ details summary {
     display: flex;
     margin: 0;
     margin-top: -7px;
-    margin-left: 25px;
+    margin-left: 45px;
     padding: 0; }
   .footer__nav__item {
     margin: 0;
-    padding: 0; }
+    padding: 0 10px; }
   .button--faq {
     display: none; }
   .button--get-ff {
